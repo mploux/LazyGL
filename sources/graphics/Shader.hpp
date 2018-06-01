@@ -45,7 +45,7 @@ namespace lazy
 			Shader &addComputeShader(const std::string &path);
 			Shader &addFragmentShader(const std::string &path);
 
-			Shader &compile();
+			Shader &link();
 
 			Shader &setUniform1i(const std::string &name, const GLint &v);
 			Shader &setUniform1f(const std::string &name, const GLfloat &v);

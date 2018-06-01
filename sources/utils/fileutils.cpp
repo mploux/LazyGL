@@ -15,12 +15,17 @@ namespace lazy
 			std::stringstream result;
 			std::ifstream in(path);
 
+			std::cout << "Loading file: " << path << "\n";
+
 			if (in.is_open() && !in.bad())
 			{
 				result << in.rdbuf();
 				in.close();
+				return result.str();
 			}
-			return result.str();
+
+			std::cerr << "Failed to load file: " << path << "\n";
+			return "";
 		}
 	}
 }

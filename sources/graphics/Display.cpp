@@ -27,7 +27,7 @@ namespace lazy
 			glfwSwapInterval(0);
 
 			glEnable(GL_DEPTH_TEST);
-			glEnable(GL_CULL_FACE);
+//			glEnable(GL_CULL_FACE);
 		}
 
 		Display::~Display()
@@ -37,6 +37,10 @@ namespace lazy
 
 		void Display::update()
 		{
+
+			glfwGetWindowSize(window, &width, &height);
+			glViewport(0, 0, width, height);
+
 			glfwSwapBuffers(window);
 			glfwPollEvents();
 		}

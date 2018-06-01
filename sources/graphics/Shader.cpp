@@ -17,7 +17,7 @@ namespace lazy
 			glDeleteProgram(program);
 		}
 
-		GLuint createShader(const char *sources, GLint type)
+		GLuint Shader::createShader(const char *sources, GLint type)
 		{
 			GLuint shader;
 			if ((shader = glCreateShader(type)) == GL_FALSE)
@@ -32,8 +32,9 @@ namespace lazy
 			{
 				GLint length;
 				glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &length);
-				char *msg[length];
-				std::cerr << msg << "\n";
+				GLchar msg[length];
+				glGetShaderInfoLog(shader, length, &length, msg);
+				std::cout << "Shader error:\n" << msg << std::endl;
 				glDeleteShader(shader);
 				return 0;
 			}
@@ -45,6 +46,8 @@ namespace lazy
 			if (shaders.find("vertex") != shaders.end())
 				return *this;
 			shaders["vertex"] = createShader(utils::LoadFile(path).c_str(), GL_VERTEX_SHADER);
+
+			return *this;
 		}
 
 		Shader &Shader::addGeometryShader(const std::string &path)
@@ -52,6 +55,8 @@ namespace lazy
 			if (shaders.find("geometry") != shaders.end())
 				return *this;
 			shaders["geometry"] = createShader(utils::LoadFile(path).c_str(), GL_GEOMETRY_SHADER);
+
+			return *this;
 		}
 
 		Shader &Shader::addTesselationShader(const std::string &path)
@@ -59,6 +64,8 @@ namespace lazy
 			if (shaders.find("tesselation") != shaders.end())
 				return *this;
 			shaders["tesselation"] = createShader(utils::LoadFile(path).c_str(), GL_TESS_CONTROL_SHADER);
+
+			return *this;
 		}
 
 		Shader &Shader::addComputeShader(const std::string &path)
@@ -66,6 +73,8 @@ namespace lazy
 			if (shaders.find("compute") != shaders.end())
 				return *this;
 			shaders["compute"] = createShader(utils::LoadFile(path).c_str(), GL_COMPUTE_SHADER);
+
+			return *this;
 		}
 
 		Shader &Shader::addFragmentShader(const std::string &path)
@@ -73,21 +82,39 @@ namespace lazy
 			if (shaders.find("fragment") != shaders.end())
 				return *this;
 			shaders["fragment"] = createShader(utils::LoadFile(path).c_str(), GL_FRAGMENT_SHADER);
+
+			return *this;
 		}
 
-		Shader &Shader::compile()
+		Shader &Shader::link()
 		{
 			if ((program = glCreateProgram()) == GL_FALSE)
 				throw std::runtime_error("Shader program error: Unable to create shader program !");
 
-			for (auto &pair : shaders)
-				glAttachShader(program, pair.second);
+//			std::cout << "LOL: " << shaders.size() << std::endl;
+//			for (auto i = shaders.begin(); i != shaders.end(); ++i)
+//			{
+//				std::cout << "LOL 2: " <<  i->first << "  " << i->second << "   " << shaders.size() << "\n";
+//			}
+			glAttachShader(program, shaders["vertex"]);
+			glAttachShader(program, shaders["fragment"]);
 
 			glLinkProgram(program);
+
+			GLint program_linked;
+			glGetProgramiv(program, GL_LINK_STATUS, &program_linked);
+			if (program_linked != GL_TRUE)
+			{
+				GLsizei log_length = 0;
+				GLchar message[1024];
+				glGetProgramInfoLog(program, 1024, &log_length, message);
+				// Write the error to a log
+			}
+
 			glValidateProgram(program);
 
-			for (auto &pair : shaders)
-				glDeleteShader(pair.second);
+//			for (auto &pair : shaders)
+//				glDeleteShader(pair.second);
 
 			return *this;
 		}
@@ -146,6 +173,8 @@ namespace lazy
 		Shader &Shader::bind()
 		{
 			glUseProgram(program);
+
+			std::cout << "MDR: " << program << "\n";
 
 			return *this;
 		}

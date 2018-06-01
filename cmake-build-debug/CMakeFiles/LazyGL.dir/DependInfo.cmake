@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/madpl/dev/LazyGL/sources/graphics/Camera.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj"
   "C:/Users/madpl/dev/LazyGL/sources/graphics/Display.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj"
+  "C:/Users/madpl/dev/LazyGL/sources/graphics/Mesh.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj"
   "C:/Users/madpl/dev/LazyGL/sources/graphics/Shader.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj"
   "C:/Users/madpl/dev/LazyGL/sources/main.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/main.cpp.obj"
   "C:/Users/madpl/dev/LazyGL/sources/utils/fileutils.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj"

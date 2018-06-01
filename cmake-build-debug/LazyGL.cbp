@@ -379,10 +379,22 @@
 		<Unit filename="C:/Users/madpl/dev/LazyGL/includes/lazy.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
+		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Camera.cpp">
+			<Option target="LazyGL"/>
+		</Unit>
+		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Camera.hpp">
+			<Option target="LazyGL"/>
+		</Unit>
 		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Display.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
 		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Display.hpp">
+			<Option target="LazyGL"/>
+		</Unit>
+		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Mesh.cpp">
+			<Option target="LazyGL"/>
+		</Unit>
+		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Mesh.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
 		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Shader.cpp">
@@ -392,6 +404,9 @@
 			<Option target="LazyGL"/>
 		</Unit>
 		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/main.cpp">
+			<Option target="LazyGL"/>
+		</Unit>
+		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/maths/transform.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
 		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/utils/fileutils.cpp">

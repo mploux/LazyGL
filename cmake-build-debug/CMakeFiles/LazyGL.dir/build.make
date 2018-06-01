@@ -56,10 +56,35 @@ include CMakeFiles/LazyGL.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LazyGL.dir/flags.make
 
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj: CMakeFiles/LazyGL.dir/flags.make
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj: CMakeFiles/LazyGL.dir/includes_CXX.rsp
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj: ../sources/graphics/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LazyGL.dir\sources\graphics\Camera.cpp.obj -c C:\Users\madpl\dev\LazyGL\sources\graphics\Camera.cpp
+
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\madpl\dev\LazyGL\sources\graphics\Camera.cpp > CMakeFiles\LazyGL.dir\sources\graphics\Camera.cpp.i
+
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\madpl\dev\LazyGL\sources\graphics\Camera.cpp -o CMakeFiles\LazyGL.dir\sources\graphics\Camera.cpp.s
+
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.requires
+
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.provides: CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.provides.build
+.PHONY : CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.provides
+
+CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.provides.build: CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj
+
+
 CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj: CMakeFiles/LazyGL.dir/flags.make
 CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj: CMakeFiles/LazyGL.dir/includes_CXX.rsp
 CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj: ../sources/graphics/Display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LazyGL.dir\sources\graphics\Display.cpp.obj -c C:\Users\madpl\dev\LazyGL\sources\graphics\Display.cpp
 
 CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.i: cmake_force
@@ -81,10 +106,35 @@ CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj.provides: CMakeFiles/Lazy
 CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj.provides.build: CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj
 
 
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj: CMakeFiles/LazyGL.dir/flags.make
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj: CMakeFiles/LazyGL.dir/includes_CXX.rsp
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj: ../sources/graphics/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LazyGL.dir\sources\graphics\Mesh.cpp.obj -c C:\Users\madpl\dev\LazyGL\sources\graphics\Mesh.cpp
+
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\madpl\dev\LazyGL\sources\graphics\Mesh.cpp > CMakeFiles\LazyGL.dir\sources\graphics\Mesh.cpp.i
+
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\madpl\dev\LazyGL\sources\graphics\Mesh.cpp -o CMakeFiles\LazyGL.dir\sources\graphics\Mesh.cpp.s
+
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.requires
+
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.provides: CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.provides.build
+.PHONY : CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.provides
+
+CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.provides.build: CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj
+
+
 CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj: CMakeFiles/LazyGL.dir/flags.make
 CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj: CMakeFiles/LazyGL.dir/includes_CXX.rsp
 CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj: ../sources/graphics/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LazyGL.dir\sources\graphics\Shader.cpp.obj -c C:\Users\madpl\dev\LazyGL\sources\graphics\Shader.cpp
 
 CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.i: cmake_force
@@ -109,7 +159,7 @@ CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj.provides.build: CMakeFiles
 CMakeFiles/LazyGL.dir/sources/main.cpp.obj: CMakeFiles/LazyGL.dir/flags.make
 CMakeFiles/LazyGL.dir/sources/main.cpp.obj: CMakeFiles/LazyGL.dir/includes_CXX.rsp
 CMakeFiles/LazyGL.dir/sources/main.cpp.obj: ../sources/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LazyGL.dir/sources/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LazyGL.dir/sources/main.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LazyGL.dir\sources\main.cpp.obj -c C:\Users\madpl\dev\LazyGL\sources\main.cpp
 
 CMakeFiles/LazyGL.dir/sources/main.cpp.i: cmake_force
@@ -134,7 +184,7 @@ CMakeFiles/LazyGL.dir/sources/main.cpp.obj.provides.build: CMakeFiles/LazyGL.dir
 CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj: CMakeFiles/LazyGL.dir/flags.make
 CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj: CMakeFiles/LazyGL.dir/includes_CXX.rsp
 CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj: ../sources/utils/fileutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LazyGL.dir\sources\utils\fileutils.cpp.obj -c C:\Users\madpl\dev\LazyGL\sources\utils\fileutils.cpp
 
 CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.i: cmake_force
@@ -158,7 +208,9 @@ CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj.provides.build: CMakeFiles
 
 # Object files for target LazyGL
 LazyGL_OBJECTS = \
+"CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj" \
 "CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj" \
+"CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj" \
 "CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj" \
 "CMakeFiles/LazyGL.dir/sources/main.cpp.obj" \
 "CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj"
@@ -166,7 +218,9 @@ LazyGL_OBJECTS = \
 # External object files for target LazyGL
 LazyGL_EXTERNAL_OBJECTS =
 
+LazyGL.exe: CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj
 LazyGL.exe: CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj
+LazyGL.exe: CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj
 LazyGL.exe: CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj
 LazyGL.exe: CMakeFiles/LazyGL.dir/sources/main.cpp.obj
 LazyGL.exe: CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj
@@ -176,7 +230,7 @@ LazyGL.exe: lib/libglew32d.dll.a
 LazyGL.exe: CMakeFiles/LazyGL.dir/linklibs.rsp
 LazyGL.exe: CMakeFiles/LazyGL.dir/objects1.rsp
 LazyGL.exe: CMakeFiles/LazyGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LazyGL.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\madpl\dev\LazyGL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable LazyGL.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LazyGL.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -184,7 +238,9 @@ CMakeFiles/LazyGL.dir/build: LazyGL.exe
 
 .PHONY : CMakeFiles/LazyGL.dir/build
 
+CMakeFiles/LazyGL.dir/requires: CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj.requires
 CMakeFiles/LazyGL.dir/requires: CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj.requires
+CMakeFiles/LazyGL.dir/requires: CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj.requires
 CMakeFiles/LazyGL.dir/requires: CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj.requires
 CMakeFiles/LazyGL.dir/requires: CMakeFiles/LazyGL.dir/sources/main.cpp.obj.requires
 CMakeFiles/LazyGL.dir/requires: CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj.requires

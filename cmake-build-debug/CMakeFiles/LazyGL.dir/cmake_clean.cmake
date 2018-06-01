@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj"
   "CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj"
+  "CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj"
   "CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj"
   "CMakeFiles/LazyGL.dir/sources/main.cpp.obj"
   "CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj"

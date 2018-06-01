@@ -18,5 +18,9 @@
 
 #include "graphics/Display.hpp"
 #include "graphics/Shader.hpp"
+#include "graphics/Mesh.hpp"
+#include "graphics/Camera.hpp"
+
+#include "maths/transform.hpp"
 
 #include "utils/fileutils.hpp"

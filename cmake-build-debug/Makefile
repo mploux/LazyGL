@@ -220,6 +220,33 @@ glew_s/fast:
 	$(MAKE) -f dependencies\glew\build\cmake\CMakeFiles\glew_s.dir\build.make dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/build
 .PHONY : glew_s/fast
 
+sources/graphics/Camera.obj: sources/graphics/Camera.cpp.obj
+
+.PHONY : sources/graphics/Camera.obj
+
+# target to build an object file
+sources/graphics/Camera.cpp.obj:
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj
+.PHONY : sources/graphics/Camera.cpp.obj
+
+sources/graphics/Camera.i: sources/graphics/Camera.cpp.i
+
+.PHONY : sources/graphics/Camera.i
+
+# target to preprocess a source file
+sources/graphics/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.i
+.PHONY : sources/graphics/Camera.cpp.i
+
+sources/graphics/Camera.s: sources/graphics/Camera.cpp.s
+
+.PHONY : sources/graphics/Camera.s
+
+# target to generate assembly for a file
+sources/graphics/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.s
+.PHONY : sources/graphics/Camera.cpp.s
+
 sources/graphics/Display.obj: sources/graphics/Display.cpp.obj
 
 .PHONY : sources/graphics/Display.obj
@@ -246,6 +273,33 @@ sources/graphics/Display.s: sources/graphics/Display.cpp.s
 sources/graphics/Display.cpp.s:
 	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.s
 .PHONY : sources/graphics/Display.cpp.s
+
+sources/graphics/Mesh.obj: sources/graphics/Mesh.cpp.obj
+
+.PHONY : sources/graphics/Mesh.obj
+
+# target to build an object file
+sources/graphics/Mesh.cpp.obj:
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj
+.PHONY : sources/graphics/Mesh.cpp.obj
+
+sources/graphics/Mesh.i: sources/graphics/Mesh.cpp.i
+
+.PHONY : sources/graphics/Mesh.i
+
+# target to preprocess a source file
+sources/graphics/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.i
+.PHONY : sources/graphics/Mesh.cpp.i
+
+sources/graphics/Mesh.s: sources/graphics/Mesh.cpp.s
+
+.PHONY : sources/graphics/Mesh.s
+
+# target to generate assembly for a file
+sources/graphics/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles\LazyGL.dir\build.make CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.s
+.PHONY : sources/graphics/Mesh.cpp.s
 
 sources/graphics/Shader.obj: sources/graphics/Shader.cpp.obj
 
@@ -345,9 +399,15 @@ help:
 	@echo ... glfw
 	@echo ... glew
 	@echo ... glew_s
+	@echo ... sources/graphics/Camera.obj
+	@echo ... sources/graphics/Camera.i
+	@echo ... sources/graphics/Camera.s
 	@echo ... sources/graphics/Display.obj
 	@echo ... sources/graphics/Display.i
 	@echo ... sources/graphics/Display.s
+	@echo ... sources/graphics/Mesh.obj
+	@echo ... sources/graphics/Mesh.i
+	@echo ... sources/graphics/Mesh.s
 	@echo ... sources/graphics/Shader.obj
 	@echo ... sources/graphics/Shader.i
 	@echo ... sources/graphics/Shader.s
