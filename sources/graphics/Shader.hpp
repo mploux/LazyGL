@@ -33,7 +33,7 @@ namespace lazy
 			std::map<std::string, GLuint>	shaders;
 
 			GLint getUniformLocation(const std::string &name);
-			GLuint createShader(const char *sources, GLint type);
+			GLuint createShader(const char *sources, GLenum type);
 
 		public:
 			Shader();
@@ -47,14 +47,16 @@ namespace lazy
 
 			Shader &link();
 
-			Shader &setUniform1i(const std::string &name, const GLint &v);
-			Shader &setUniform1f(const std::string &name, const GLfloat &v);
-			Shader &setUniform3f(const std::string &name, const glm::vec3 &v);
-			Shader &setUniform4f(const std::string &name, const glm::vec4 &v);
-			Shader &setUniform4x4f(const std::string &name, const glm::mat4 &v);
+			void setUniform1i(const std::string &name, const GLint &v);
+			void setUniform1f(const std::string &name, const GLfloat &v);
+			void setUniform3f(const std::string &name, const glm::vec3 &v);
+			void setUniform4f(const std::string &name, const glm::vec4 &v);
+			void setUniform4x4f(const std::string &name, const glm::mat4 &v);
 
 			void bind();
 			void unbind();
+
+			bool isValid();
 
 			GLuint	getProgram() const { return program; }
 		};

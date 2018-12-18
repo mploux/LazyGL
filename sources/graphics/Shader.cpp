@@ -17,14 +17,16 @@ namespace lazy
 			glDeleteProgram(program);
 		}
 
-		GLuint Shader::createShader(const char *sources, GLint type)
+		GLuint Shader::createShader(const char *sources, GLenum type)
 		{
 			GLuint shader;
 			if ((shader = glCreateShader(type)) == GL_FALSE)
 				throw std::runtime_error("Shader error: Unable to create shader !");
 
-			glShaderSource(shader, 1, &sources, nullptr);
+			glShaderSource(shader, 1, &sources, NULL);
 			glCompileShader(shader);
+
+			std::cout << sources << "\n";
 
 			GLint status;
 			glGetShaderiv(shader, GL_COMPILE_STATUS, &status);
@@ -38,6 +40,7 @@ namespace lazy
 				glDeleteShader(shader);
 				return 0;
 			}
+			std::cout << "Shader: " << shader << std::endl;
 			return shader;
 		}
 
@@ -89,33 +92,51 @@ namespace lazy
 			if ((program = glCreateProgram()) == GL_FALSE)
 				throw std::runtime_error("Shader program error: Unable to create shader program !");
 
+			std::cout << shaders["vertex"] << "\n";
+			std::cout << shaders["fragment"] << "\n";
+
 			glAttachShader(program, shaders["vertex"]);
 			glAttachShader(program, shaders["fragment"]);
 
 			glLinkProgram(program);
 
-//			GLint result;
-//			glGetProgramiv(program, GL_LINK_STATUS, &result);
-//
-//			if (result == GL_FALSE)
-//			{
-//				int log_length;
-//				glGetProgramiv(program, GL_INFO_LOG_LENGTH, &log_length);
-//				if (log_length)
-//				{
-//					char	*log = new char[log_length];
-//					glGetProgramInfoLog(program, log_length, nullptr, log);
-//					std::cerr << log;
-//					delete[] log;
-//				}
-//			}
+			GLint result;
+			glGetProgramiv(program, GL_LINK_STATUS, &result);
 
-			glValidateProgram(program);
-
-//			for (auto &pair : shaders)
-//				glDeleteShader(pair.second);
+			if (result == GL_FALSE)
+			{
+				GLint length;
+				glGetShaderiv(program, GL_INFO_LOG_LENGTH, &length);
+				GLchar msg[length];
+				glGetShaderInfoLog(program, length, &length, msg);
+				std::cout << "Shader error:\n" << msg << std::endl;
+				glDeleteShader(program);
+			}
 
 			return *this;
+		}
+
+		bool Shader::isValid()
+		{
+			glValidateProgram(program);
+			GLint result;
+			glGetProgramiv(program, GL_VALIDATE_STATUS, &result);
+			if (result == GL_FALSE)
+			{
+				std::cout << "Shader error !" << std::endl;
+				int log_length;
+				glGetProgramiv(program, GL_INFO_LOG_LENGTH, &log_length);
+				if (log_length)
+				{
+					char *log = new char[log_length];
+					glGetProgramInfoLog(program, log_length, nullptr, log);
+					std::cout << "Shader error: ";
+					std::cout << log;
+					delete[] log;
+				}
+				return false;
+			}
+			return true;
 		}
 
 		GLint Shader::getUniformLocation(const std::string &name)
@@ -129,44 +150,34 @@ namespace lazy
 			return location;
 		}
 
-		Shader &Shader::setUniform1i(const std::string &name, const GLint &v)
+		void Shader::setUniform1i(const std::string &name, const GLint &v)
 		{
 			GLint location = getUniformLocation(name);
 			glUniform1i(location, v);
-
-			return *this;
 		}
 
-		Shader &Shader::setUniform1f(const std::string &name, const GLfloat &v)
+		void Shader::setUniform1f(const std::string &name, const GLfloat &v)
 		{
 			GLint location = getUniformLocation(name);
 			glUniform1f(location, v);
-
-			return *this;
 		}
 
-		Shader &Shader::setUniform3f(const std::string &name, const glm::vec3 &v)
+		void Shader::setUniform3f(const std::string &name, const glm::vec3 &v)
 		{
 			GLint location = getUniformLocation(name);
 			glUniform3f(location, v.x, v.y, v.z);
-
-			return *this;
 		}
 
-		Shader &Shader::setUniform4f(const std::string &name, const glm::vec4 &v)
+		void Shader::setUniform4f(const std::string &name, const glm::vec4 &v)
 		{
 			GLint location = getUniformLocation(name);
 			glUniform4f(location, v.x, v.y, v.z, v.w);
-
-			return *this;
 		}
 
-		Shader &Shader::setUniform4x4f(const std::string &name, const glm::mat4 &v)
+		void Shader::setUniform4x4f(const std::string &name, const glm::mat4 &v)
 		{
 			GLint location = getUniformLocation(name);
-			glUniformMatrix4fv(location, 4, GL_FALSE, &v[0][0]);
-
-			return *this;
+			glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(v));
 		}
 
 		void Shader::bind()

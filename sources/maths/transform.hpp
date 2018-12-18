@@ -40,6 +40,19 @@ namespace lazy
 
 				return result;
 			}
+
+			glm::mat4	toCameraMatrix() const
+			{
+				glm::mat4 translationMatrix = glm::translate(glm::mat4(), glm::vec3(-position.x, -position.y, -position.z));
+				glm::mat4 rotationMatrix = glm::toMat4(rotation);
+				glm::mat4 scaleMatrix = glm::scale(glm::mat4(), scale);
+				glm::mat4 result = translationMatrix * rotationMatrix * scaleMatrix;
+
+				if (parent)
+					result *= parent->toMatrix();
+
+				return result;
+			}
 		};
 	}
 }

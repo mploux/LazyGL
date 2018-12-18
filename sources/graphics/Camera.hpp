@@ -23,9 +23,9 @@ namespace lazy
 			void input();
 			void update();
 
-			glm::mat4 getViewMatrix() const { return transform.toMatrix(); }
+			glm::mat4 getViewMatrix() const { return transform.toCameraMatrix(); }
 			glm::mat4 getProjectionMatrix() const { return projection; }
-			glm::mat4 getViewProjectionMatrix() const { return (projection * transform.toMatrix()); }
+			glm::mat4 getViewProjectionMatrix() const { return (projection * transform.toCameraMatrix()); }
 		};
 	}
 }
