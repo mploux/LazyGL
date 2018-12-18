@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2018.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\glm_dummy.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\glm_dummy.dir/objects.a @CMakeFiles\glm_dummy.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\glm_dummy.dir/objects.a -Wl,--no-whole-archive  -o glm_dummy.exe -Wl,--out-implib,libglm_dummy.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\glm_dummy.dir\linklibs.rsp

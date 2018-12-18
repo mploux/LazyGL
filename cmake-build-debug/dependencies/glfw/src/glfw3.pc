@@ -1,4 +1,4 @@
-prefix=C:/Program Files (x86)/LazyGL
+prefix=/usr/local
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
@@ -9,5 +9,5 @@ Version: 3.2.1
 URL: http://www.glfw.org/
 Requires.private: 
 Libs: -L${libdir} -lglfw3
-Libs.private:  -lgdi32
+Libs.private:  -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo
 Cflags: -I${includedir}

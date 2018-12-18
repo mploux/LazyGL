@@ -8,441 +8,438 @@
 		<Option virtualFolders="CMake Files\;CMake Files\dependencies\;CMake Files\dependencies\glfw\;CMake Files\dependencies\glfw\CMake\;CMake Files\dependencies\glfw\CMake\modules\;CMake Files\dependencies\glfw\src\;CMake Files\dependencies\glew\;CMake Files\dependencies\glew\build\;CMake Files\dependencies\glew\build\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="LazyGL">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/LazyGL.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/madpl/dev/LazyGL/sources"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/includes"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glew/include"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glfw/include"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glm"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 LazyGL"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="LazyGL/fast">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/LazyGL.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/madpl/dev/LazyGL/sources"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/includes"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glew/include"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glfw/include"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glm"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 LazyGL/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LazyGL">
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/LazyGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/mploux/dev/LazyGL/sources"/>
+					<Add directory="/Users/mploux/dev/LazyGL/includes"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glew/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glfw/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glm"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 LazyGL"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LazyGL/fast">
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/LazyGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/mploux/dev/LazyGL/sources"/>
+					<Add directory="/Users/mploux/dev/LazyGL/includes"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glew/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glfw/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glm"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 LazyGL/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add option="-DUNICODE"/>
-					<Add option="-DWINVER=0x0501"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glfw/include"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glfw/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glfw/src"/>
+					<Add directory="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add option="-DUNICODE"/>
-					<Add option="-DWINVER=0x0501"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glfw/include"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glfw/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glfw/src"/>
+					<Add directory="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glew">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/bin/glew32d.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/lib/GLEW.framework/GLEW" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glew/fast">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/bin/glew32d.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/lib/GLEW.framework/GLEW" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glew_s">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/lib/libglew32d.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/lib/libGLEWd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew_s"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew_s"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glew_s/fast">
-				<Option output="C:/Users/madpl/dev/LazyGL/cmake-build-debug/lib/libglew32d.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
+				<Option output="/Users/mploux/dev/LazyGL/cmake-build-debug/lib/libGLEWd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="C:/Users/madpl/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/mploux/dev/LazyGL/dependencies/glew/build/cmake/../../include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew_s/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/make.exe -f &quot;C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 glew_s/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/glfw_config.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/build/glew.rc">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glew/include/GL/glew.h">
 			<Option target="glew"/>
 			<Option target="glew_s"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/include/GL/glew.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glew/include/GL/glxew.h">
 			<Option target="glew"/>
 			<Option target="glew_s"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/include/GL/glxew.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glew/include/GL/wglew.h">
 			<Option target="glew"/>
 			<Option target="glew_s"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/include/GL/wglew.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glew/src/glew.c">
 			<Option target="glew"/>
 			<Option target="glew_s"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/src/glew.c">
-			<Option target="glew"/>
-			<Option target="glew_s"/>
-		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/include/GLFW/glfw3.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/include/GLFW/glfw3native.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/context.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_init.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/egl_context.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/egl_context.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_joystick.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/init.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_monitor.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/input.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/internal.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/monitor.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/cocoa_window.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/vulkan.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/wgl_context.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/wgl_context.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_init.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_joystick.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_joystick.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/nsgl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_monitor.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/nsgl_context.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_platform.h">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/posix_tls.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_time.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/posix_tls.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_tls.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/win32_window.c">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/window.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/includes/lazy.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/includes/lazy.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Camera.cpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Camera.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Camera.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Camera.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Display.cpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Display.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Display.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Display.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Mesh.cpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Mesh.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Mesh.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Mesh.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Shader.cpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Shader.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/graphics/Shader.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/graphics/Shader.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/main.cpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/main.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/maths/transform.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/maths/transform.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/utils/fileutils.cpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/utils/fileutils.cpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/sources/utils/fileutils.hpp">
+		<Unit filename="/Users/mploux/dev/LazyGL/sources/utils/fileutils.hpp">
 			<Option target="LazyGL"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/CMakelists.txt">
+		<Unit filename="/Users/mploux/dev/LazyGL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/CMakeLists.txt">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\dependencies\glfw\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/cmake_uninstall.cmake.in">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\dependencies\glfw\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/CMake/modules/FindVulkan.cmake">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/CMake/modules/FindVulkan.cmake">
 			<Option virtualFolder="CMake Files\dependencies\glfw\CMake\modules\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/CMakeLists.txt">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/glfw3.pc.in">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/glfw3.pc.in">
 			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/glfw3Config.cmake.in">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/glfw3Config.cmake.in">
 			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glfw/src/glfw_config.h.in">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glfw/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/glew.pc.in">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glew/glew.pc.in">
 			<Option virtualFolder="CMake Files\dependencies\glew\"/>
 		</Unit>
-		<Unit filename="C:/Users/madpl/dev/LazyGL/dependencies/glew/build/cmake/CMakeLists.txt">
+		<Unit filename="/Users/mploux/dev/LazyGL/dependencies/glew/build/cmake/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\dependencies\glew\build\cmake\"/>
 		</Unit>
 	</Project>

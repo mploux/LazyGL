@@ -1,13 +1,12 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
-  "RC"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/madpl/dev/LazyGL/dependencies/glew/src/glew.c" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.obj"
+  "/Users/mploux/dev/LazyGL/dependencies/glew/src/glew.c" "/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
@@ -17,20 +16,6 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../dependencies/glew/build/cmake/../../include"
-  )
-set(CMAKE_DEPENDS_CHECK_RC
-  "C:/Users/madpl/dev/LazyGL/dependencies/glew/build/glew.rc" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/__/glew.rc.obj"
-  )
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_RC
-  "GLEW_NO_GLU"
-  "GLEW_STATIC"
-  )
-
-# The include file search paths:
-set(CMAKE_RC_TARGET_INCLUDE_PATH
   "../dependencies/glew/build/cmake/../../include"
   )
 

@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/madpl/dev/LazyGL/sources/graphics/Camera.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.obj"
-  "C:/Users/madpl/dev/LazyGL/sources/graphics/Display.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.obj"
-  "C:/Users/madpl/dev/LazyGL/sources/graphics/Mesh.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.obj"
-  "C:/Users/madpl/dev/LazyGL/sources/graphics/Shader.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.obj"
-  "C:/Users/madpl/dev/LazyGL/sources/main.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/main.cpp.obj"
-  "C:/Users/madpl/dev/LazyGL/sources/utils/fileutils.cpp" "C:/Users/madpl/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.obj"
+  "/Users/mploux/dev/LazyGL/sources/graphics/Camera.cpp" "/Users/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.o"
+  "/Users/mploux/dev/LazyGL/sources/graphics/Display.cpp" "/Users/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.o"
+  "/Users/mploux/dev/LazyGL/sources/graphics/Mesh.cpp" "/Users/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.o"
+  "/Users/mploux/dev/LazyGL/sources/graphics/Shader.cpp" "/Users/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.o"
+  "/Users/mploux/dev/LazyGL/sources/main.cpp" "/Users/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/main.cpp.o"
+  "/Users/mploux/dev/LazyGL/sources/utils/fileutils.cpp" "/Users/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -24,8 +24,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
-  "C:/Users/madpl/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake"
+  "/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/mploux/dev/LazyGL/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

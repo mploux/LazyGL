@@ -46,7 +46,6 @@ namespace lazy
 			if (shaders.find("vertex") != shaders.end())
 				return *this;
 			shaders["vertex"] = createShader(utils::LoadFile(path).c_str(), GL_VERTEX_SHADER);
-
 			return *this;
 		}
 
@@ -82,7 +81,6 @@ namespace lazy
 			if (shaders.find("fragment") != shaders.end())
 				return *this;
 			shaders["fragment"] = createShader(utils::LoadFile(path).c_str(), GL_FRAGMENT_SHADER);
-
 			return *this;
 		}
 
@@ -91,25 +89,26 @@ namespace lazy
 			if ((program = glCreateProgram()) == GL_FALSE)
 				throw std::runtime_error("Shader program error: Unable to create shader program !");
 
-//			std::cout << "LOL: " << shaders.size() << std::endl;
-//			for (auto i = shaders.begin(); i != shaders.end(); ++i)
-//			{
-//				std::cout << "LOL 2: " <<  i->first << "  " << i->second << "   " << shaders.size() << "\n";
-//			}
 			glAttachShader(program, shaders["vertex"]);
 			glAttachShader(program, shaders["fragment"]);
 
 			glLinkProgram(program);
 
-			GLint program_linked;
-			glGetProgramiv(program, GL_LINK_STATUS, &program_linked);
-			if (program_linked != GL_TRUE)
-			{
-				GLsizei log_length = 0;
-				GLchar message[1024];
-				glGetProgramInfoLog(program, 1024, &log_length, message);
-				// Write the error to a log
-			}
+//			GLint result;
+//			glGetProgramiv(program, GL_LINK_STATUS, &result);
+//
+//			if (result == GL_FALSE)
+//			{
+//				int log_length;
+//				glGetProgramiv(program, GL_INFO_LOG_LENGTH, &log_length);
+//				if (log_length)
+//				{
+//					char	*log = new char[log_length];
+//					glGetProgramInfoLog(program, log_length, nullptr, log);
+//					std::cerr << log;
+//					delete[] log;
+//				}
+//			}
 
 			glValidateProgram(program);
 
@@ -170,20 +169,14 @@ namespace lazy
 			return *this;
 		}
 
-		Shader &Shader::bind()
+		void Shader::bind()
 		{
 			glUseProgram(program);
-
-			std::cout << "MDR: " << program << "\n";
-
-			return *this;
 		}
 
-		Shader &Shader::unbind()
+		void Shader::unbind()
 		{
 			glUseProgram(0);
-
-			return *this;
 		}
 	}
 }

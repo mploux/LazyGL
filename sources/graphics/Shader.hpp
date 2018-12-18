@@ -53,8 +53,8 @@ namespace lazy
 			Shader &setUniform4f(const std::string &name, const glm::vec4 &v);
 			Shader &setUniform4x4f(const std::string &name, const glm::mat4 &v);
 
-			Shader &bind();
-			Shader &unbind();
+			void bind();
+			void unbind();
 
 			GLuint	getProgram() const { return program; }
 		};
