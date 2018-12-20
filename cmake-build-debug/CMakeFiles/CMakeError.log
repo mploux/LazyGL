@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1090/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1090.dir/build.make CMakeFiles/cmTC_f1090.dir/build
+make[1]: Entering directory '/home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1090.dir/CheckSymbolExists.c.o
+/usr/bin/clang    -o CMakeFiles/cmTC_f1090.dir/CheckSymbolExists.c.o   -c /home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f1090
+/home/mploux/programs/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1090.dir/link.txt --verbose=1
+/usr/bin/clang      -rdynamic CMakeFiles/cmTC_f1090.dir/CheckSymbolExists.c.o  -o cmTC_f1090 
+CMakeFiles/cmTC_f1090.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x19): undefined reference to `pthread_create'
+clang-6.0: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_f1090.dir/build.make:97: recipe for target 'cmTC_f1090' failed
+make[1]: *** [cmTC_f1090] Error 1
+make[1]: Leaving directory '/home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1090/fast' failed
+make: *** [cmTC_f1090/fast] Error 2
+
+File /home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5444e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5444e.dir/build.make CMakeFiles/cmTC_5444e.dir/build
+make[1]: Entering directory '/home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5444e.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5444e.dir/CheckFunctionExists.c.o   -c /home/mploux/programs/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5444e
+/home/mploux/programs/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5444e.dir/link.txt --verbose=1
+/usr/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_5444e.dir/CheckFunctionExists.c.o  -o cmTC_5444e -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang-6.0: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_5444e.dir/build.make:97: recipe for target 'cmTC_5444e' failed
+make[1]: *** [cmTC_5444e] Error 1
+make[1]: Leaving directory '/home/mploux/dev/LazyGL/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5444e/fast' failed
+make: *** [cmTC_5444e/fast] Error 2
+
+

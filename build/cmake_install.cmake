@@ -1,8 +1,8 @@
-# Install script for directory: /Users/mploux/dev/LazyGL
+# Install script for directory: /home/mploux/dev/LazyGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/mploux/.brew")
+  set(CMAKE_INSTALL_PREFIX "/Library/Frameworks")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/mploux/dev/LazyGL/build/dependencies/glfw/cmake_install.cmake")
-  include("/Users/mploux/dev/LazyGL/build/dependencies/glew/build/cmake/cmake_install.cmake")
+  include("/home/mploux/dev/LazyGL/build/dependencies/glfw/cmake_install.cmake")
+  include("/home/mploux/dev/LazyGL/build/dependencies/glew/build/cmake/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/mploux/dev/LazyGL/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mploux/dev/LazyGL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

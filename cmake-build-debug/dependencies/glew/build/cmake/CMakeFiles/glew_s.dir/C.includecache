@@ -46,7 +46,7 @@ GL/glew.h
 windows.h
 -
 
-/Users/mploux/dev/LazyGL/dependencies/glew/src/glew.c
+/home/mploux/dev/LazyGL/dependencies/glew/src/glew.c
 GL/glew.h
 -
 GL/osmesa.h

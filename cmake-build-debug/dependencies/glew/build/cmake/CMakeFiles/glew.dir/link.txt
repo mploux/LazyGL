@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -dynamiclib -Wl,-headerpad_max_install_names -compatibility_version 2.1.0 -current_version 2.1.0 -o ../../../../lib/GLEW.framework/Versions/2.1.0/GLEW -install_name @rpath/GLEW.framework/Versions/2.1.0/GLEW CMakeFiles/glew.dir/__/__/src/glew.c.o -framework OpenGL -framework OpenGL 
+/usr/bin/clang -fPIC -g  -shared -Wl,-soname,libGLEWd.so.2.1 -o ../../../../lib/libGLEWd.so.2.1.0 CMakeFiles/glew.dir/__/__/src/glew.c.o -lGLU -lGL -lGLU -lGL 

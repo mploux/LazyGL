@@ -8,8 +8,8 @@ namespace lazy
 {
 	namespace graphics
 	{
-		Camera::Camera(const maths::transform &trs)
-			: transform(trs), projection(glm::perspective(70.0f, 16.0f / 9.0f, 0.1f, 1000.0f))
+		Camera::Camera(const Display &display, const maths::transform &trs)
+			: display(display), transform(trs), projection(glm::mat4(1))
 		{
 		}
 
@@ -25,7 +25,23 @@ namespace lazy
 
 		void Camera::update()
 		{
+			if (display.hasResized())
+			{
+				this->updateProjection();
+			}
+		}
 
+		void Camera::setProjection(float fov, float near, float far)
+		{
+			this->fov = fov;
+			this->near = near;
+			this->far = far;
+			this->updateProjection();
+		}
+
+		void Camera::updateProjection()
+		{
+			this->projection = glm::perspective(fov, display.getAspect(), near, far);
 		}
 	}
 }

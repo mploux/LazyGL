@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/mploux/dev/LazyGL/dependencies/glew/src/glew.c" "/Users/mploux/dev/LazyGL/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o"
+  "/home/mploux/dev/LazyGL/dependencies/glew/src/glew.c" "/home/mploux/dev/LazyGL/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C

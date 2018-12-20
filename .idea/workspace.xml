@@ -2,11 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="LazyGL" targetName="glew" />
+      <config projectName="LazyGL" targetName="TestGame" />
       <config projectName="LazyGL" targetName="glew_s" />
+      <config projectName="LazyGL" targetName="glew" />
       <config projectName="LazyGL" targetName="glfw" />
-      <config projectName="LazyGL" targetName="uninstall" />
       <config projectName="LazyGL" targetName="LazyGL" />
+      <config projectName="LazyGL" targetName="uninstall" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -16,22 +17,283 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2844291b-15b6-4878-84d5-7a509f7a3769" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LazyGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LazyGL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/main_f.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/main_f.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/main_v.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/main_v.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/graphics/Camera.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/graphics/Camera.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/graphics/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/graphics/Shader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/graphics/Shader.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/graphics/Shader.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/maths/transform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/maths/transform.hpp" afterDir="false" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/DependInfo.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/build.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/cmake_clean.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/depend.internal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/depend.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/flags.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/link.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/progress.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/TestGame" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libGLEWd.so.2.1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libGLEWd.so.2.1.0" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/inputs/Input.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/inputs/Input.hpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/inputs/Keyboard.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/inputs/Keyboard.hpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/inputs/Mouse.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/inputs/Mouse.hpp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CMakelists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CompilerIdC/CMakeCCompilerId.c" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LazyGL.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/LazyGL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets-noconfig.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/Makefile" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glew/build/cmake/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-noconfig.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/uninstall.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/uninstall.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/CMakeFiles/uninstall.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/cmake_uninstall.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/cmake_uninstall.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/cmake_clean_target.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/glfw3.pc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/glfw3Config.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/glfw3ConfigVersion.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/dependencies/glfw/src/glfw_config.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LazyGL.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LazyGL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LazyGL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/LazyGL.cbp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/C.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/C.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/glew.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/glew.cbp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/GLFW.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/GLFW.cbp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/C.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/glfw.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/glfw3.pc" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/glfw3.pc" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/glfw_config.h" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/src/glfw_config.h" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/GLEW" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Headers" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Resources" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Versions/2.1.0/GLEW" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Versions/2.1.0/Headers/glew.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Versions/2.1.0/Headers/glxew.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Versions/2.1.0/Headers/wglew.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Versions/2.1.0/Resources/Info.plist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GLEW.framework/Versions/Current" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeCache.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/3.10.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/CMakeRuleHashes.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/LazyGL.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/Makefile2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/feature_tests.c" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/feature_tests.cxx" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change beforePath="$PROJECT_DIR$/dbuild/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/LazyGL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets-debug.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/glew_s.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glew/build/cmake/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-debug.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/uninstall.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/CMakeFiles/uninstall.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/uninstall.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/CMakeFiles/uninstall.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/Makefile" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/dependencies/glfw/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/cmake_uninstall.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/glfw3.pc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/glfw3Config.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/glfw3ConfigVersion.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbuild/dependencies/glfw/src/glfw_config.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/includes/lazy.hpp" afterPath="$PROJECT_DIR$/includes/lazy.hpp" />
+      <change beforePath="$PROJECT_DIR$/shaders/main_v.glsl" afterPath="$PROJECT_DIR$/shaders/main_v.glsl" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Camera.cpp" afterPath="$PROJECT_DIR$/sources/graphics/Camera.cpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Camera.hpp" afterPath="$PROJECT_DIR$/sources/graphics/Camera.hpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Display.cpp" afterPath="$PROJECT_DIR$/sources/graphics/Display.cpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Display.hpp" afterPath="$PROJECT_DIR$/sources/graphics/Display.hpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Mesh.cpp" afterPath="$PROJECT_DIR$/sources/graphics/Mesh.cpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Mesh.hpp" afterPath="$PROJECT_DIR$/sources/graphics/Mesh.hpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Shader.cpp" afterPath="$PROJECT_DIR$/sources/graphics/Shader.cpp" />
+      <change beforePath="$PROJECT_DIR$/sources/graphics/Shader.hpp" afterPath="$PROJECT_DIR$/sources/graphics/Shader.hpp" />
+      <change beforePath="$PROJECT_DIR$/sources/main.cpp" afterPath="$PROJECT_DIR$/tests/TestGame.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/dependencies/glfw/CMakeFiles/" />
     <ignored path="$PROJECT_DIR$/dependencies/glew/build/cmake/CMakeFiles/" />
     <ignored path="$PROJECT_DIR$/dependencies/glfw/src/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,77 +347,69 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.64002734">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sources/main.cpp">
+          <file leaf-file-name="TestGame.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/TestGame.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="41" />
+                <state relative-caret-position="574">
+                  <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CMakelists.txt">
+          <file leaf-file-name="lazy.hpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/includes/lazy.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dependencies/glew/build/cmake/CMakeLists.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="411">
-                  <caret line="208" column="94" selection-start-line="208" selection-start-column="94" selection-end-line="208" selection-end-column="94" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="Shader.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="828">
-                  <caret line="179" column="73" selection-start-line="179" selection-start-column="73" selection-end-line="179" selection-end-column="73" />
+                <state relative-caret-position="620">
+                  <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="Mesh.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="752">
-                  <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
+                <state relative-caret-position="620">
+                  <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/shaders/main_v.glsl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/shaders/main_f.glsl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="12" selection-start-column="12" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="Display.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/graphics/Display.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+                <state relative-caret-position="314">
+                  <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#41#60#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Display.hpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/graphics/Display.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="578">
+                  <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#14#33#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -164,50 +418,112 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="Mesh.hpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="28" column="31" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="31" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.hpp">
+          <file leaf-file-name="Camera.hpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="810">
-                  <caret line="54" selection-start-line="54" selection-end-line="54" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Camera.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Input.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/inputs/Input.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
                   <folding>
-                    <element signature="e#55#74#0" expanded="true" />
+                    <element signature="e#41#61#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.hpp">
+          <file leaf-file-name="Input.hpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/inputs/Input.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#55#86#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.cpp">
+          <file leaf-file-name="Keyboard.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/inputs/Keyboard.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="255">
+                  <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file leaf-file-name="Mouse.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/inputs/Mouse.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="280">
+                  <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Mouse.hpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sources/inputs/Mouse.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="612">
+                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#55#86#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Keyboard.hpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/inputs/Keyboard.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="93">
+                  <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#55#86#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="transform.hpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/maths/transform.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#55#77#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -241,22 +557,32 @@
         <option value="$PROJECT_DIR$/includes/graphics/Shader.hpp" />
         <option value="$PROJECT_DIR$/includes/utils/fileutils.hpp" />
         <option value="$PROJECT_DIR$/sources/utils/fileutils.hpp" />
-        <option value="$PROJECT_DIR$/sources/graphics/Mesh.hpp" />
         <option value="$PROJECT_DIR$/sources/maths/Transform.hpp" />
         <option value="$PROJECT_DIR$/sources/maths/transform.cpp" />
-        <option value="$PROJECT_DIR$/includes/lazy.hpp" />
-        <option value="$PROJECT_DIR$/sources/graphics/Camera.cpp" />
         <option value="$PROJECT_DIR$/sources/utils/fileutils.cpp" />
-        <option value="$PROJECT_DIR$/sources/graphics/Mesh.cpp" />
         <option value="$PROJECT_DIR$/CMakelists.txt" />
-        <option value="$PROJECT_DIR$/sources/graphics/Display.cpp" />
         <option value="$PROJECT_DIR$/shaders/main_f.glsl" />
-        <option value="$PROJECT_DIR$/sources/graphics/Shader.hpp" />
-        <option value="$PROJECT_DIR$/sources/graphics/Shader.cpp" />
         <option value="$PROJECT_DIR$/sources/maths/transform.hpp" />
         <option value="$PROJECT_DIR$/shaders/main_v.glsl" />
-        <option value="$PROJECT_DIR$/sources/graphics/Camera.hpp" />
         <option value="$PROJECT_DIR$/sources/main.cpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Mesh.cpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Mesh.hpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Shader.cpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Camera.hpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Camera.cpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Shader.hpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Display.hpp" />
+        <option value="$PROJECT_DIR$/dependencies/glfw/include/GLFW/glfw3.h" />
+        <option value="$PROJECT_DIR$/sources/inputs/Keyboard.hpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/sources/inputs/Keyboard.cpp" />
+        <option value="$PROJECT_DIR$/includes/lazy.hpp" />
+        <option value="$PROJECT_DIR$/sources/inputs/Input.hpp" />
+        <option value="$PROJECT_DIR$/sources/inputs/Input.cpp" />
+        <option value="$PROJECT_DIR$/sources/graphics/Display.cpp" />
+        <option value="$PROJECT_DIR$/sources/inputs/Mouse.hpp" />
+        <option value="$PROJECT_DIR$/sources/inputs/Mouse.cpp" />
+        <option value="$PROJECT_DIR$/tests/TestGame.cpp" />
       </list>
     </option>
   </component>
@@ -267,15 +593,27 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -283,73 +621,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LazyGL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="dependencies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="dependencies" type="462c0819:PsiDirectoryNode" />
-              <item name="glew" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="dependencies" type="462c0819:PsiDirectoryNode" />
-              <item name="glew" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="dependencies" type="462c0819:PsiDirectoryNode" />
-              <item name="glew" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LazyGL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
               <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="shaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LazyGL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="maths" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LazyGL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LazyGL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LazyGL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="LazyGL" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,44 +679,39 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LazyGL" RUN_TARGET_NAME="LazyGL" EXPLICIT_BUILD_TARGET_NAME="all">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LazyGL" RUN_TARGET_NAME="TestGame" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
     </configuration>
-    <configuration name="LazyGL" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="LazyGL" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LazyGL" RUN_TARGET_NAME="LazyGL">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+    <configuration name="LazyGL" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="LazyGL" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LazyGL" RUN_TARGET_NAME="TestGame">
+      <envs />
+    </configuration>
+    <configuration name="TestGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="TestGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LazyGL" RUN_TARGET_NAME="TestGame">
+      <envs />
     </configuration>
     <configuration name="glew" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="glew" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+      <envs />
     </configuration>
     <configuration name="glew_s" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="glew_s" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+      <envs />
     </configuration>
     <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="glfw" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+      <envs />
     </configuration>
     <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LazyGL" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+      <envs />
     </configuration>
-    <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.LazyGL" />
-      <item itemvalue="Application.glew" />
-      <item itemvalue="Application.glew_s" />
-      <item itemvalue="Application.uninstall" />
-      <item itemvalue="Application.glfw" />
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LazyGL" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestGame" />
+      <item index="3" class="java.lang.String" itemvalue="Application.glew" />
+      <item index="4" class="java.lang.String" itemvalue="Application.glew_s" />
+      <item index="5" class="java.lang.String" itemvalue="Application.uninstall" />
+      <item index="6" class="java.lang.String" itemvalue="Application.glfw" />
     </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -436,36 +730,38 @@
       <workItem from="1545150830722" duration="3000" />
       <workItem from="1545150858141" duration="300000" />
       <workItem from="1545151227714" duration="13000000" />
+      <workItem from="1545267475612" duration="5888000" />
+      <workItem from="1545319090174" duration="16624000" />
+      <workItem from="1545341676764" duration="2400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28798000" />
+    <option name="totallyTimeSpent" value="53710000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1810961" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20072992" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2671533" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.4160584" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32919708" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329927" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.25693431" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20087336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36544502" sideWeight="0.4978166" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31099477" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4366492" sideWeight="0.5021834" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28691098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29947644" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2671533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,14 +770,169 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/Test.hpp" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Display.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding>
+            <element signature="e#55#74#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/maths/transform.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="e#55#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3043">
+          <caret line="179" column="73" lean-forward="false" selection-start-line="179" selection-start-column="73" selection-end-line="179" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="67" lean-forward="false" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/main_v.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/main_f.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Display.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#74#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="77" lean-forward="false" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/maths/transform.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/Test.hpp" />
     <entry file="file://$PROJECT_DIR$/sources/Test.cpp" />
     <entry file="file://$PROJECT_DIR$/dependencies/glm/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/dependencies/glew/include/GL/glew.h" />
     <entry file="file://$PROJECT_DIR$/sources/utils/fileutils.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -490,119 +941,211 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/maths/transform.cpp" />
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Display.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/lazy.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/basic_string.h" />
     <entry file="file://$PROJECT_DIR$/sources/utils/fileutils.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies/glew/build/cmake/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="208" column="94" selection-start-line="208" selection-start-column="94" selection-end-line="208" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakelists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Display.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/glew/build/cmake/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/shaders/main_f.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.cpp">
+    <entry file="file://$PROJECT_DIR$/sources/main.cpp" />
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="179" column="73" selection-start-line="179" selection-start-column="73" selection-end-line="179" selection-end-column="73" />
+        <state relative-caret-position="214">
+          <caret line="235" column="41" lean-forward="false" selection-start-line="235" selection-start-column="41" selection-end-line="235" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/glew/include/GL/glew.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="914" column="54" lean-forward="false" selection-start-line="914" selection-start-column="54" selection-end-line="914" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="537">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding>
-            <element signature="e#55#74#0" expanded="true" />
+            <element signature="e#55#74#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/main_v.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/maths/transform.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="272">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#55#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/main.cpp">
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="102">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/glfw/include/GLFW/glfw3.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="788" column="26" lean-forward="false" selection-start-line="788" selection-start-column="26" selection-end-line="788" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/main_v.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/inputs/Input.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/inputs/Input.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lazy.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Mesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Display.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/graphics/Display.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/inputs/Keyboard.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#55#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/inputs/Keyboard.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/inputs/Mouse.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/inputs/Mouse.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
