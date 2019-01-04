@@ -60,6 +60,10 @@ namespace lazy
 				height = newHeight;
 				this->updateViewport();
 			}
+		}
+
+		void Display::updateInputs()
+		{
 			inputs::input::update();
 		}
 

@@ -22,6 +22,7 @@ namespace lazy
 			~Display();
 
 			void update();
+			void updateInputs();
 
 			GLFWwindow *getWindow() const { return window; }
 			std::string &getTitle() { return title; }
