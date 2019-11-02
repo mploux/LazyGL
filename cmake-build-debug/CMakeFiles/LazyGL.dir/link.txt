@@ -1,2 +1,0 @@
-/usr/bin/ar qc libLazyGL.a  CMakeFiles/LazyGL.dir/sources/graphics/Camera.cpp.o CMakeFiles/LazyGL.dir/sources/graphics/Display.cpp.o CMakeFiles/LazyGL.dir/sources/graphics/Mesh.cpp.o CMakeFiles/LazyGL.dir/sources/graphics/Shader.cpp.o CMakeFiles/LazyGL.dir/sources/inputs/Input.cpp.o CMakeFiles/LazyGL.dir/sources/inputs/Keyboard.cpp.o CMakeFiles/LazyGL.dir/sources/inputs/Mouse.cpp.o CMakeFiles/LazyGL.dir/sources/utils/fileutils.cpp.o
-/usr/bin/ranlib libLazyGL.a

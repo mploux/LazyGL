@@ -1,6 +1,0 @@
-/home/mploux/programs/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /home/mploux/dev/LazyGL
--- Could NOT find Vulkan (missing: VULKAN_LIBRARY VULKAN_INCLUDE_DIR) 
--- Using X11 for window creation
--- Configuring done
--- Generating done
--- Build files have been written to: /home/mploux/dev/LazyGL/cmake-build-debug
