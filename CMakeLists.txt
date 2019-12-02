@@ -52,6 +52,6 @@ target_link_libraries(${NAME} ${LIBRARIES})
 target_include_directories(${NAME} PUBLIC ${INCLUDES})
 
 # --- TestGame compilation ---
-add_executable(TestGame tests/TestGame.cpp)
-target_link_libraries(TestGame ${NAME})
-target_include_directories(TestGame PUBLIC includes/)
+# add_executable(TestGame tests/TestGame.cpp)
+# target_link_libraries(TestGame ${NAME})
+# target_include_directories(TestGame PUBLIC includes/)
