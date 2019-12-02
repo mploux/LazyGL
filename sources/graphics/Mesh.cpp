@@ -21,10 +21,6 @@ namespace lazy
 			vPositions.push_back(v.y);
 			vPositions.push_back(v.z);
 
-			static int i = 0;
-			i++;
-			std::cout << "Added: " << i << "\n";
-
 			return *this;
 		}
 
@@ -54,46 +50,56 @@ namespace lazy
 			return *this;
 		}
 
+		Mesh &Mesh::addIndex(const int index)
+		{
+			indices.push_back(index);
+
+			return *this;
+		}
+
+		Mesh &Mesh::addTriangle(const glm::u32vec3 &triangle)
+		{
+			indices.push_back(triangle.x);
+			indices.push_back(triangle.y);
+			indices.push_back(triangle.z);
+
+			return *this;
+		}
+
 		Mesh &Mesh::build()
 		{
-			std::cout << "Build" << std::endl;
-
 			glGenVertexArrays(1, &vao);
 			glGenBuffers(1, &vbo);
-//			glGenBuffers(1, &nbo);
-//			glGenBuffers(1, &ubo);
-//			glGenBuffers(1, &tbo);
-//			glGenBuffers(1, &ibo);
-
-			for (int i = 0; i < 9; i++)
-				std::cout << vPositions[i] << "\n";
+			glGenBuffers(1, &nbo);
+			glGenBuffers(1, &ubo);
+			glGenBuffers(1, &tbo);
+			glGenBuffers(1, &ibo);
 
 			glBindVertexArray(vao);
 
 			glEnableVertexAttribArray(0);
-//			glEnableVertexAttribArray(1);
-//			glEnableVertexAttribArray(2);
-//			glEnableVertexAttribArray(3);
+			glEnableVertexAttribArray(1);
+			glEnableVertexAttribArray(2);
+			glEnableVertexAttribArray(3);
 
 			glBindBuffer(GL_ARRAY_BUFFER, vbo);
 			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vPositions.size(), (void *)(&vPositions[0]), GL_STATIC_DRAW);
 			glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
-//
-//			glBindBuffer(GL_ARRAY_BUFFER, nbo);
-//			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vNormals.size(), &vNormals[0], GL_STATIC_DRAW);
-//			glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
-//
-//			glBindBuffer(GL_ARRAY_BUFFER, ubo);
-//			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vUvs.size(), &vUvs[0], GL_STATIC_DRAW);
-//			glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
-//
-//			glBindBuffer(GL_ARRAY_BUFFER, tbo);
-//			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vTangents.size(), &vTangents[0], GL_STATIC_DRAW);
-//			glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
 
-//			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
-//			glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(vPositions), &vPositions[0], GL_STATIC_DRAW);
-//			glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
+			glBindBuffer(GL_ARRAY_BUFFER, nbo);
+			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vNormals.size(), &vNormals[0], GL_STATIC_DRAW);
+			glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
+
+			glBindBuffer(GL_ARRAY_BUFFER, ubo);
+			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vUvs.size(), &vUvs[0], GL_STATIC_DRAW);
+			glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
+
+			glBindBuffer(GL_ARRAY_BUFFER, tbo);
+			glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vTangents.size(), &vTangents[0], GL_STATIC_DRAW);
+			glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid *) 0);
+
+			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
+			glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLuint) * indices.size(), &indices[0], GL_STATIC_DRAW);
 
 			glBindVertexArray(0);
 
@@ -103,7 +109,7 @@ namespace lazy
 		void Mesh::draw()
 		{
 			glBindVertexArray(vao);
-			glDrawArrays(GL_TRIANGLES, 0, 3);
+			glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, nullptr);
 			glBindVertexArray(0);
 		}
 	}

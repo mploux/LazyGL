@@ -30,6 +30,7 @@ namespace lazy
 			std::vector<GLfloat> vNormals;
 			std::vector<GLfloat> vUvs;
 			std::vector<GLfloat> vTangents;
+			std::vector<GLuint> indices;
 
 			GLuint vao, vbo, nbo, ubo, tbo, ibo;
 
@@ -41,6 +42,8 @@ namespace lazy
 			Mesh &addNormal(const glm::vec3 &v);
 			Mesh &addUv(const glm::vec2 &v);
 			Mesh &addTangent(const glm::vec3 &v);
+			Mesh &addIndex(const int index);
+			Mesh &addTriangle(const glm::u32vec3 &triangle);
 
 			Mesh &build();
 

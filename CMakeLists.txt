@@ -7,10 +7,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(OpenGL REQUIRED)
 
-find_library(COCOA_LIBRARY Cocoa REQUIRED)
-find_library(IOKIT_LIBRARY IOKit REQUIRED)
-find_library(COREVIDEO_LIBRARY CoreVideo REQUIRED)
-
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
@@ -24,15 +20,26 @@ add_subdirectory(dependencies/glew/build/cmake)
 file(GLOB_RECURSE SOURCES sources/*)
 file(GLOB_RECURSE HEADERS includes/*)
 
-add_executable(${NAME} ${SOURCES} ${HEADERS})
+add_library(${NAME} ${SOURCES} ${HEADERS})
 
-set(LIBRARIES
-    ${COCOA_LIBRARY}
-    ${IOKIT_LIBRARY}
-    ${COREVIDEO_LIBRARY}
-    ${OPENGL_gl_LIBRARY}
-    glfw
-	glew)
+if(APPLE)
+	find_library(COCOA_LIBRARY Cocoa REQUIRED)
+	find_library(IOKIT_LIBRARY IOKit REQUIRED)
+	find_library(COREVIDEO_LIBRARY CoreVideo REQUIRED)
+
+	set(LIBRARIES
+		${COCOA_LIBRARY}
+		${IOKIT_LIBRARY}
+		${COREVIDEO_LIBRARY}
+		${OPENGL_gl_LIBRARY}
+		glfw
+		glew)
+else()
+	set(LIBRARIES
+		${OPENGL_gl_LIBRARY}
+		glfw
+		glew)
+endif()
 
 set(INCLUDES
 	sources/
@@ -43,3 +50,8 @@ set(INCLUDES
 
 target_link_libraries(${NAME} ${LIBRARIES})
 target_include_directories(${NAME} PUBLIC ${INCLUDES})
+
+# --- TestGame compilation ---
+# add_executable(TestGame tests/TestGame.cpp)
+# target_link_libraries(TestGame ${NAME})
+# target_include_directories(TestGame PUBLIC includes/)

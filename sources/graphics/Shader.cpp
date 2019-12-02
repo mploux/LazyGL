@@ -26,8 +26,6 @@ namespace lazy
 			glShaderSource(shader, 1, &sources, NULL);
 			glCompileShader(shader);
 
-			std::cout << sources << "\n";
-
 			GLint status;
 			glGetShaderiv(shader, GL_COMPILE_STATUS, &status);
 			if (status == GL_FALSE)
@@ -40,7 +38,6 @@ namespace lazy
 				glDeleteShader(shader);
 				return 0;
 			}
-			std::cout << "Shader: " << shader << std::endl;
 			return shader;
 		}
 
@@ -87,13 +84,10 @@ namespace lazy
 			return *this;
 		}
 
-		Shader &Shader::link()
+		void Shader::link()
 		{
 			if ((program = glCreateProgram()) == GL_FALSE)
 				throw std::runtime_error("Shader program error: Unable to create shader program !");
-
-			std::cout << shaders["vertex"] << "\n";
-			std::cout << shaders["fragment"] << "\n";
 
 			glAttachShader(program, shaders["vertex"]);
 			glAttachShader(program, shaders["fragment"]);
@@ -112,8 +106,6 @@ namespace lazy
 				std::cout << "Shader error:\n" << msg << std::endl;
 				glDeleteShader(program);
 			}
-
-			return *this;
 		}
 
 		bool Shader::isValid()
@@ -123,7 +115,6 @@ namespace lazy
 			glGetProgramiv(program, GL_VALIDATE_STATUS, &result);
 			if (result == GL_FALSE)
 			{
-				std::cout << "Shader error !" << std::endl;
 				int log_length;
 				glGetProgramiv(program, GL_INFO_LOG_LENGTH, &log_length);
 				if (log_length)

@@ -2,6 +2,7 @@
 // Created by Marc on 01/06/2018.
 //
 
+#include <lazy.hpp>
 #include "Display.hpp"
 
 namespace lazy
@@ -9,7 +10,7 @@ namespace lazy
 	namespace graphics
 	{
 		Display::Display(const std::string &title, int width, int height)
-			: title(title), width(width), height(height)
+			: title(title), width(width), height(height), resized(false)
 		{
 			if (!glfwInit())
 				throw std::runtime_error("GLFW error: Unable to init glfw !");
@@ -24,7 +25,6 @@ namespace lazy
 			if (!window)
 				throw std::runtime_error("GLFW error: Unable to create window !");
 
-			glfwSwapInterval(0);
 			glfwMakeContextCurrent(window);
 			glViewport(0, 0, width, height);
 
@@ -32,22 +32,51 @@ namespace lazy
 			if (glewInit() != GLEW_OK)
 				throw std::runtime_error("GLEW error: Unable to init glew !");
 
-//			glEnable(GL_DEPTH_TEST);
-//			glEnable(GL_CULL_FACE);
+			std::cout << "OpenGL version: " << glGetString(GL_VERSION) << "\n";
+
+			inputs::input::init(*this);
 		}
 
 		Display::~Display()
 		{
+			inputs::input::clean();
 			glfwTerminate();
 		}
 
 		void Display::update()
 		{
-//			glfwGetWindowSize(window, &width, &height);
-//			glViewport(0, 0, width, height);
+			int newWidth;
+			int newHeight;
 
 			glfwSwapBuffers(window);
 			glfwPollEvents();
+
+			resized = false;
+			glfwGetWindowSize(window, &newWidth, &newHeight);
+			if (newWidth != width || newHeight != height)
+			{
+				resized = true;
+				width = newWidth;
+				height = newHeight;
+				this->updateViewport();
+			}
+		}
+
+		void Display::updateInputs()
+		{
+			inputs::input::update();
+		}
+
+		void Display::updateViewport()
+		{
+			glViewport(0, 0, width, height);
+		}
+
+		Display &Display::enableCap(const GLenum &cap)
+		{
+			glEnable(cap);
+
+			return *this;
 		}
 	}
 }
