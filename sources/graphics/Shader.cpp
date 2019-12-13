@@ -36,7 +36,7 @@ namespace lazy
 				glGetShaderInfoLog(shader, length, &length, msg);
 				std::cout << "Shader error:\n" << msg << std::endl;
 				glDeleteShader(shader);
-				delete msg;
+				delete[] msg;
 				return 0;
 			}
 			return shader;
@@ -106,7 +106,7 @@ namespace lazy
 				glGetShaderInfoLog(program, length, &length, msg);
 				std::cout << "Shader error:\n" << msg << std::endl;
 				glDeleteShader(program);
-				delete msg;
+				delete[] msg;
 			}
 		}
 
