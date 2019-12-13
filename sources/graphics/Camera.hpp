@@ -32,6 +32,7 @@ namespace lazy
 
 			void setProjection(float fov, float near, float far);
 			void updateProjection();
+			void setPosition(glm::vec3 pos);
 
 			glm::mat4 getViewMatrix() const { return transform.toCameraMatrix(); }
 			glm::mat4 getProjectionMatrix() const { return projection; }
