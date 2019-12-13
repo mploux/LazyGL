@@ -32,10 +32,11 @@ namespace lazy
 			{
 				GLint length;
 				glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &length);
-				GLchar msg[length];
+				GLchar *msg = new GLchar[length];
 				glGetShaderInfoLog(shader, length, &length, msg);
 				std::cout << "Shader error:\n" << msg << std::endl;
 				glDeleteShader(shader);
+				delete[] msg;
 				return 0;
 			}
 			return shader;
@@ -101,10 +102,11 @@ namespace lazy
 			{
 				GLint length;
 				glGetShaderiv(program, GL_INFO_LOG_LENGTH, &length);
-				GLchar msg[length];
+				GLchar *msg = new GLchar[length];
 				glGetShaderInfoLog(program, length, &length, msg);
 				std::cout << "Shader error:\n" << msg << std::endl;
 				glDeleteShader(program);
+				delete[] msg;
 			}
 		}
 

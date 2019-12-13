@@ -34,6 +34,12 @@ if(APPLE)
 		${OPENGL_gl_LIBRARY}
 		glfw
 		glew)
+elseif(WINDOWS)
+	set(LIBRARIES
+		${OPENGL_gl_LIBRARY}
+		glew
+		glfw
+	)
 else()
 	set(LIBRARIES
 		${OPENGL_gl_LIBRARY}

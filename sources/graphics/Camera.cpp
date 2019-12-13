@@ -43,5 +43,10 @@ namespace lazy
 		{
 			this->projection = glm::perspective(fov, display.getAspect(), near, far);
 		}
+
+		void Camera::setPosition(glm::vec3 pos)
+		{
+			this->transform.position = std::move(pos);
+		}
 	}
 }
