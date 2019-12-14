@@ -3,6 +3,11 @@
 //
 
 #include "Camera.hpp"
+#include "inputs/Input.hpp"
+#include "inputs/Keyboard.hpp"
+
+using namespace lazy;
+using namespace inputs;
 
 namespace lazy
 {
@@ -18,9 +23,26 @@ namespace lazy
 
 		}
 
-		void Camera::input()
+		void Camera::input(float moveSpeed, float mouseSpeed, std::array<GLuint, 6> keys)
 		{
+			float rotX = input::getMouse().getVelocity().x * -mouseSpeed;
+			float rotY = input::getMouse().getVelocity().y * -mouseSpeed;
 
+			transform.rotate(rotX, glm::vec3(0, 1, 0));
+			transform.rotate(rotY, transform.right());
+
+			if (keys[0] && input::getKeyboard().getKey(keys[0]))
+				transform.translate(transform.forward() * moveSpeed);
+			if (keys[1] && input::getKeyboard().getKey(keys[1]))
+				transform.translate(transform.back() * moveSpeed);
+			if (keys[2] && input::getKeyboard().getKey(keys[2]))
+				transform.translate(transform.left() * moveSpeed);
+			if (keys[3] && input::getKeyboard().getKey(keys[3]))
+				transform.translate(transform.right() * moveSpeed);
+			if (keys[4] && input::getKeyboard().getKey(keys[4]))
+				transform.translate(transform.bottom() * moveSpeed);
+			if (keys[5] && input::getKeyboard().getKey(keys[5]))
+				transform.translate(transform.top() * moveSpeed);
 		}
 
 		void Camera::update()

@@ -45,13 +45,64 @@ namespace lazy
 			{
 				glm::mat4 translationMatrix = glm::translate(glm::mat4(), glm::vec3(-position.x, -position.y, -position.z));
 				glm::mat4 rotationMatrix = glm::toMat4(rotation);
-				glm::mat4 scaleMatrix = glm::scale(glm::mat4(), scale);
-				glm::mat4 result = translationMatrix * rotationMatrix * scaleMatrix;
+				glm::mat4 result = rotationMatrix * translationMatrix;
 
 				if (parent)
 					result *= parent->toMatrix();
 
 				return result;
+			}
+
+			void		translate(const glm::vec3 &dir)
+			{
+				position += dir;
+			}
+
+			void		rotate(float rad, const glm::vec3 &axis)
+			{
+				rotation = glm::rotate(rotation, rad, axis);
+			}
+
+			glm::vec3	forward() const
+			{
+				glm::vec4 dir(0.0f, 0.0f, -1.0f, 0.0f);
+				
+				return (glm::vec3(dir * glm::toMat4(rotation)));
+			}
+
+			glm::vec3	back() const
+			{
+				glm::vec4 dir(0.0f, 0.0f, 1.0f, 0.0f);
+
+				return (glm::vec3(dir * glm::toMat4(rotation)));
+			}
+
+			glm::vec3	left() const
+			{
+				glm::vec4 dir(-1.0f, 0.0f, 0.0f, 0.0f);
+
+				return (glm::vec3(dir * glm::toMat4(rotation)));
+			}
+
+			glm::vec3	right() const
+			{
+				glm::vec4 dir(1.0f, 0.0f, 0.0f, 0.0f);
+
+				return (glm::vec3(dir * glm::toMat4(rotation)));
+			}
+
+			glm::vec3	top() const
+			{
+				glm::vec4 dir(0.0f, 1.0f, 0.0f, 0.0f);
+
+				return (glm::vec3(dir * glm::toMat4(rotation)));
+			}
+
+			glm::vec3	bottom() const
+			{
+				glm::vec4 dir(0.0f, -1.0f, 0.0f, 0.0f);
+
+				return (glm::vec3(dir * glm::toMat4(rotation)));
 			}
 		};
 	}

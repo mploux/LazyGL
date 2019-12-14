@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include <array>
 #include "maths/transform.hpp"
 #include "Display.hpp"
 
@@ -27,7 +28,7 @@ namespace lazy
 			Camera(const Display &display, const maths::transform &trs);
 			~Camera();
 
-			void input();
+			void input(float moveSpeed, float mouseSpeed, std::array<GLuint, 6> keys);
 			void update();
 
 			void setProjection(float fov, float near, float far);

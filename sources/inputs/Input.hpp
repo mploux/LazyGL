@@ -4,10 +4,10 @@
 
 #pragma once
 
-#include <graphics/Display.hpp>
 #include <vector>
 #include <algorithm>
 #include "Mouse.hpp"
+#include "graphics/Display.hpp"
 
 namespace lazy
 {
