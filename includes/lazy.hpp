@@ -20,6 +20,7 @@
 #include "graphics/Shader.hpp"
 #include "graphics/Mesh.hpp"
 #include "graphics/Camera.hpp"
+#include "graphics/textures/Framebuffer.hpp"
 
 #include "inputs/Input.hpp"
 #include "inputs/Keyboard.hpp"
