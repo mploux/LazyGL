@@ -37,6 +37,7 @@ namespace lazy
 			void setTitle(const std::string &title) { this->title = title; }
 			void setWidth(int width) { this->width = width; }
 			void setHeight(int height) { this->height = height; }
+			void setFullscreen(bool fullscreen);
 
 			void updateViewport();
 
