@@ -89,5 +89,24 @@ namespace lazy
 
 			return *this;
 		}
+
+		void Display::setFullscreen(bool fullscreen)
+		{
+			if (fullscreen)
+			{
+				int nmonitors = 0;
+				GLFWmonitor **monitors = glfwGetMonitors(&nmonitors);
+
+				if (nmonitors > 0)
+				{
+					const GLFWvidmode *vidmode = glfwGetVideoMode(monitors[0]);
+					glfwSetWindowMonitor(window, monitors[0], 0, 0, vidmode->width, vidmode->height, vidmode->refreshRate);
+				}
+			}
+			else
+			{
+				glfwSetWindowMonitor(window, 0, 0, 0, width, height, 0);
+			}
+		}
 	}
 }
