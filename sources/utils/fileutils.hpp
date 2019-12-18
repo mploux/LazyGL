@@ -11,5 +11,7 @@ namespace lazy
 	namespace utils
 	{
 		std::string		LoadFile(const std::string &path);
+		std::string		LoadShader(const std::string &path);
+		std::string		GetDirectory(std::string const &file);
 	}
 }

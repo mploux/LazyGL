@@ -46,7 +46,7 @@ namespace lazy
 		{
 			if (shaders.find("vertex") != shaders.end())
 				return *this;
-			shaders["vertex"] = createShader(utils::LoadFile(path).c_str(), GL_VERTEX_SHADER);
+			shaders["vertex"] = createShader(utils::LoadShader(path).c_str(), GL_VERTEX_SHADER);
 			return *this;
 		}
 
@@ -54,7 +54,7 @@ namespace lazy
 		{
 			if (shaders.find("geometry") != shaders.end())
 				return *this;
-			shaders["geometry"] = createShader(utils::LoadFile(path).c_str(), GL_GEOMETRY_SHADER);
+			shaders["geometry"] = createShader(utils::LoadShader(path).c_str(), GL_GEOMETRY_SHADER);
 
 			return *this;
 		}
@@ -63,7 +63,7 @@ namespace lazy
 		{
 			if (shaders.find("tesselation") != shaders.end())
 				return *this;
-			shaders["tesselation"] = createShader(utils::LoadFile(path).c_str(), GL_TESS_CONTROL_SHADER);
+			shaders["tesselation"] = createShader(utils::LoadShader(path).c_str(), GL_TESS_CONTROL_SHADER);
 
 			return *this;
 		}
@@ -72,7 +72,7 @@ namespace lazy
 		{
 			if (shaders.find("compute") != shaders.end())
 				return *this;
-			shaders["compute"] = createShader(utils::LoadFile(path).c_str(), GL_COMPUTE_SHADER);
+			shaders["compute"] = createShader(utils::LoadShader(path).c_str(), GL_COMPUTE_SHADER);
 
 			return *this;
 		}
@@ -81,7 +81,7 @@ namespace lazy
 		{
 			if (shaders.find("fragment") != shaders.end())
 				return *this;
-			shaders["fragment"] = createShader(utils::LoadFile(path).c_str(), GL_FRAGMENT_SHADER);
+			shaders["fragment"] = createShader(utils::LoadShader(path).c_str(), GL_FRAGMENT_SHADER);
 			return *this;
 		}
 
