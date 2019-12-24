@@ -27,6 +27,9 @@ namespace lazy
 		{
 			float rotX = input::getMouse().getVelocity().x * -mouseSpeed;
 			float rotY = input::getMouse().getVelocity().y * -mouseSpeed;
+			
+			if (rotX > 90) rotX = 90;
+			if (rotX < -90) rotX = -90;
 
 			transform.rotate(rotX, glm::vec3(0, 1, 0));
 			transform.rotate(rotY, transform.right());
@@ -48,9 +51,7 @@ namespace lazy
 		void Camera::update()
 		{
 			if (display.hasResized())
-			{
 				this->updateProjection();
-			}
 		}
 
 		void Camera::setProjection(float fov, float near, float far)
