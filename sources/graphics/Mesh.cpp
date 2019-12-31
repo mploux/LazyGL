@@ -13,7 +13,14 @@ namespace lazy
 		{}
 
 		Mesh::~Mesh()
-		{}
+		{
+			glDeleteBuffers(1, &ibo);
+			glDeleteBuffers(1, &tbo);
+			glDeleteBuffers(1, &ubo);
+			glDeleteBuffers(1, &nbo);
+			glDeleteBuffers(1, &vbo);
+			glDeleteVertexArrays(1, &vao);
+		}
 
 		Mesh &Mesh::addPosition(const glm::vec3 &v)
 		{

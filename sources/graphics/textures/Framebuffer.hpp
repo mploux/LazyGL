@@ -22,6 +22,7 @@ public:
 
     void setSize(int width, int height);
 
+    void clean();
     void genFramebuffer();
     void genRenderbuffer(GLuint type, GLuint attachment);
     void genColorTexture(GLuint internalFormat, GLint format, GLuint type, GLuint filterMode, GLuint wrapMode);

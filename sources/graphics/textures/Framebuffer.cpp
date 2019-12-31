@@ -6,14 +6,26 @@ Framebuffer::Framebuffer()
 
 Framebuffer::~Framebuffer()
 {
-    if (_fbo > 0)
-        glDeleteFramebuffers(1, &_fbo);
-    if (_cbos.size() > 0)
-        glDeleteTextures(_cbos.size(), &_cbos[0]);
+    clean();
+}
+
+void Framebuffer::clean()
+{
+    for (uint i = 0; i < _cbos.size(); ++i)
+    {
+        glDeleteTextures(1, &(_cbos[i]));
+        _cbos[i] = 0;
+    }
+    _cbos.clear();
     if (_dbo > 0)
         glDeleteTextures(1, &_dbo);
     if (_rbo > 0)
         glDeleteRenderbuffers(1, &_rbo);
+    if (_fbo > 0)
+        glDeleteFramebuffers(1, &_fbo);
+    _dbo = 0;
+    _rbo = 0;
+    _fbo = 0;
 }
 
 void Framebuffer::setSize(int width, int height)
@@ -56,7 +68,7 @@ void Framebuffer::genColorTexture(GLuint internalFormat, GLint format, GLuint ty
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + _cbos.size(), GL_TEXTURE_2D, cbo, 0);
     this->unbind();
 
-    _cbos.push_back(cbo);
+    _cbos.emplace_back(cbo);
 }
 
 void Framebuffer::genDepthTexture(GLuint filterMode, GLuint wrapMode)
