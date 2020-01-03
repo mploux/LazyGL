@@ -37,6 +37,8 @@ namespace lazy
 		public:
 			Mesh();
 			~Mesh();
+			Mesh(Mesh &&);
+			Mesh &operator=(Mesh &&);
 
 			Mesh &addPosition(const glm::vec3 &v);
 			Mesh &addNormal(const glm::vec3 &v);
