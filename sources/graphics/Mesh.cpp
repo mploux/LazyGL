@@ -22,6 +22,63 @@ namespace lazy
 			glDeleteVertexArrays(1, &vao);
 		}
 
+		Mesh::Mesh(Mesh &&m)
+		{
+			vPositions = std::move(m.vPositions);
+			vNormals = std::move(m.vNormals);
+			vUvs = std::move(m.vUvs);
+			vTangents = std::move(m.vTangents);
+			indices = std::move(m.indices);
+
+			vao = m.vao;
+			vbo = m.vbo;
+			nbo = m.nbo;
+			ubo = m.ubo;
+			tbo = m.tbo;
+			ibo = m.ibo;
+
+			m.vao = 0;
+			m.vbo = 0;
+			m.nbo = 0;
+			m.ubo = 0;
+			m.tbo = 0;
+			m.ibo = 0;
+		}
+
+		Mesh &Mesh::operator=(Mesh &&rhs)
+		{
+			if (this != &rhs)
+			{
+				glDeleteBuffers(1, &ibo);
+				glDeleteBuffers(1, &tbo);
+				glDeleteBuffers(1, &ubo);
+				glDeleteBuffers(1, &nbo);
+				glDeleteBuffers(1, &vbo);
+				glDeleteVertexArrays(1, &vao);
+
+				vPositions = std::move(rhs.vPositions);
+				vNormals = std::move(rhs.vNormals);
+				vUvs = std::move(rhs.vUvs);
+				vTangents = std::move(rhs.vTangents);
+				indices = std::move(rhs.indices);
+
+				vao = rhs.vao;
+				vbo = rhs.vbo;
+				nbo = rhs.nbo;
+				ubo = rhs.ubo;
+				tbo = rhs.tbo;
+				ibo = rhs.ibo;
+
+				rhs.vao = 0;
+				rhs.vbo = 0;
+				rhs.nbo = 0;
+				rhs.ubo = 0;
+				rhs.tbo = 0;
+				rhs.ibo = 0;
+			}
+			return *this;
+		}
+
 		Mesh &Mesh::addPosition(const glm::vec3 &v)
 		{
 			vPositions.push_back(v.x);
