@@ -38,6 +38,7 @@ namespace lazy
 			glm::mat4 getViewMatrix() const { return transform.toCameraMatrix(); }
 			glm::mat4 getProjectionMatrix() const { return projection; }
 			glm::mat4 getViewProjectionMatrix() const { return (projection * transform.toCameraMatrix()); }
+			glm::vec3 getPosition() const { return transform.position; }
 		};
 	}
 }
