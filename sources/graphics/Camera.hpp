@@ -15,14 +15,26 @@ namespace lazy
 		class Camera
 		{
 		private:
+			enum Planes {
+				TOP = 0,
+				BOTTOM = 1,
+				LEFT = 2,
+				RIGHT = 3,
+				FAR = 4,
+				NEAR = 5,
+			};
+		private:
 			const Display		&display;
 			maths::transform	transform;
 
-			float				fov;
-			float				aspect;
-			float				near;
-			float				far;
-			glm::mat4			projection;
+			float										fov;
+			float										aspect;
+			float										near;
+			float										far;
+			glm::mat4									projection;
+			std::array<std::pair<glm::vec3, float>, 6>	frustumPlanes;
+
+			void updateFrustum();
 
 		public:
 			Camera(const Display &display, const maths::transform &trs);
@@ -38,6 +50,9 @@ namespace lazy
 			glm::mat4 getViewMatrix() const { return transform.toCameraMatrix(); }
 			glm::mat4 getProjectionMatrix() const { return projection; }
 			glm::mat4 getViewProjectionMatrix() const { return (projection * transform.toCameraMatrix()); }
+			glm::vec3 getPosition() const { return transform.position; }
+
+			bool sphereInFrustum(glm::vec3 pos, float radius);
 		};
 	}
 }
