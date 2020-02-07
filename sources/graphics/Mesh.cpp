@@ -10,7 +10,14 @@ namespace lazy
 	namespace graphics
 	{
 		Mesh::Mesh()
-		{}
+		{
+			vao = 0;
+			vbo = 0;
+			nbo = 0;
+			ubo = 0;
+			tbo = 0;
+			ibo = 0;
+		}
 
 		Mesh::~Mesh()
 		{
