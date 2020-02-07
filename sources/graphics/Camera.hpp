@@ -52,7 +52,7 @@ namespace lazy
 			glm::mat4 getViewProjectionMatrix() const { return (projection * transform.toCameraMatrix()); }
 			glm::vec3 getPosition() const { return transform.position; }
 
-			bool sphereInFrustum(glm::vec3 pos, float radius);
+			bool sphereInFrustum(glm::vec3 pos, float radius) const;
 		};
 	}
 }

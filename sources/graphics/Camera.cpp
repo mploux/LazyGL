@@ -119,7 +119,7 @@ namespace lazy
 			this->transform.position = std::move(pos);
 		}
 
-		bool Camera::sphereInFrustum(glm::vec3 position, float radius)
+		bool Camera::sphereInFrustum(glm::vec3 position, float radius) const
 		{
 			for (size_t i = 0; i < 6; i++) {
 
