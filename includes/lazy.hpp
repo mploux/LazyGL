@@ -26,6 +26,7 @@
 #include "inputs/Keyboard.hpp"
 #include "inputs/Mouse.hpp"
 
+#include "maths/maths.hpp"
 #include "maths/transform.hpp"
 
 #include "utils/fileutils.hpp"
