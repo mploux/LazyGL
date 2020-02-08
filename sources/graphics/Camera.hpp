@@ -23,6 +23,7 @@ namespace lazy
 				FAR = 4,
 				NEAR = 5,
 			};
+			
 		private:
 			const Display		&display;
 			maths::transform	transform;
@@ -53,6 +54,11 @@ namespace lazy
 			glm::vec3 getPosition() const { return transform.position; }
 
 			bool sphereInFrustum(glm::vec3 pos, float radius) const;
+
+			float getFov() const { return fov; }
+			float getAspect() const { return aspect; }
+			float getNear() const { return near; }
+			float getFar() const { return far; }
 		};
 	}
 }
