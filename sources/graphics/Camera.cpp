@@ -16,6 +16,7 @@ namespace lazy
 		Camera::Camera(const Display &display, const maths::transform &trs)
 			: display(display), transform(trs), aspect(display.getAspect()), projection(glm::mat4(1))
 		{
+			updateFrustum();
 		}
 
 		Camera::~Camera()
@@ -82,6 +83,15 @@ namespace lazy
 			glm::vec3 ntr = nearP + (up * (hNear / 2.0f)) + (right * (wNear / 2.0f));
 			glm::vec3 nbl = nearP - (up * (hNear / 2.0f)) - (right * (wNear / 2.0f));
 			glm::vec3 nbr = nearP - (up * (hNear / 2.0f)) + (right * (wNear / 2.0f));
+
+			frustumPoints[NEAR_TOP_LEFT] = ntl;
+			frustumPoints[NEAR_TOP_RIGHT] = ntr;
+			frustumPoints[NEAR_BOTTOM_LEFT] = nbl;
+			frustumPoints[NEAR_BOTTOM_RIGHT] = nbr;
+			frustumPoints[FAR_TOP_LEFT] = ftl;
+			frustumPoints[FAR_TOP_RIGHT] = ftr;
+			frustumPoints[FAR_BOTTOM_LEFT] = fbl;
+			frustumPoints[FAR_BOTTOM_RIGHT] = fbr;
 
 			auto calcPlaneNormal = [] (glm::vec3 a, glm::vec3 b, glm::vec3 c) -> std::pair<glm::vec3, float> {
 				glm::vec3 v = b - a;

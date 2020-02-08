@@ -33,6 +33,7 @@ namespace lazy
 			float										near;
 			float										far;
 			glm::mat4									projection;
+			std::array<glm::vec3, 8>					frustumPoints;
 			std::array<std::pair<glm::vec3, float>, 6>	frustumPlanes;
 
 			void updateFrustum();
@@ -59,6 +60,19 @@ namespace lazy
 			float getAspect() const { return aspect; }
 			float getNear() const { return near; }
 			float getFar() const { return far; }
+
+			enum FrustumPoints {
+				NEAR_TOP_LEFT,
+				NEAR_TOP_RIGHT,
+				NEAR_BOTTOM_LEFT,
+				NEAR_BOTTOM_RIGHT,
+				FAR_TOP_LEFT,
+				FAR_TOP_RIGHT,
+				FAR_BOTTOM_LEFT,
+				FAR_BOTTOM_RIGHT,
+			};
+
+			std::array<glm::vec3, 8> getFrustumPoints() const { return frustumPoints; }
 		};
 	}
 }
