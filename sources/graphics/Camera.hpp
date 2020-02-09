@@ -61,6 +61,8 @@ namespace lazy
 			float getNear() const { return near; }
 			float getFar() const { return far; }
 
+			maths::transform getTransform() const { return transform; }
+
 			enum FrustumPoints {
 				NEAR_TOP_LEFT,
 				NEAR_TOP_RIGHT,
