@@ -27,3 +27,14 @@
 
 #define MAX(a, b) (float) (a > b ? a : b)
 #define MIN(a, b) (float) (a < b ? a : b)
+
+namespace lazy
+{
+	namespace maths
+	{
+        float   random()
+        {
+            return (float) (rand()) / (float) (RAND_MAX);
+        }
+    }
+}

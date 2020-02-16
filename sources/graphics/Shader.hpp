@@ -32,7 +32,6 @@ namespace lazy
 			std::map<std::string, GLint>	uniformLocations;
 			std::map<std::string, GLuint>	shaders;
 
-			GLint getUniformLocation(const std::string &name);
 			GLuint createShader(const char *sources, GLenum type);
 
 		public:
@@ -47,6 +46,8 @@ namespace lazy
 
 			void link();
 
+			GLint getUniformLocation(const std::string &name);
+			
 			void setUniform1i(const std::string &name, const GLint &v);
 			void setUniform1f(const std::string &name, const GLfloat &v);
 			void setUniform3f(const std::string &name, const glm::vec3 &v);
