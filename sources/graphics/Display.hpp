@@ -16,7 +16,6 @@ namespace lazy
 			int 		width;
 			int 		height;
 			bool		resized;
-			bool		focused;
 
 		public:
 			Display(const std::string &title, int width, int height);
@@ -31,7 +30,6 @@ namespace lazy
 			int getHeight() const { return height; }
 			float getAspect() const { return (float)width / (float)height; }
 
-			bool isFocused() const { return focused; }
 			bool isClosed() const { return glfwWindowShouldClose(window); }
 			bool hasResized() const { return resized; }
 			void setVSync(int mode) { glfwSwapInterval(mode); }
@@ -40,6 +38,7 @@ namespace lazy
 			void setWidth(int width) { this->width = width; }
 			void setHeight(int height) { this->height = height; }
 			void setFullscreen(bool fullscreen);
+			void showCursor(bool show);
 
 			void updateViewport();
 
