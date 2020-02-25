@@ -49,19 +49,32 @@ namespace lazy
 
 		void Mouse::updateObservers()
 		{
-			for (auto b : buttons)
+			for (auto o : observers)
 			{
-				if (b.id == 0)
+				for (auto b : buttons)
 				{
-					for (auto o : observers)
+					if (b.id == 0)
 					{
 						auto area = o->getObservedArea();
+						glm::vec2 viewportPos = glm::vec2(mousePosition.x, display.getHeight() - mousePosition.y);
+
 						if (o->canBeClicked() &&
-							b.position.x >= area.x && b.position.x <= area.x + area.z &&
-							b.position.y >= area.y && b.position.y <= area.y + area.w)
+							viewportPos.x >= area.x && viewportPos.x <= area.x + area.z &&
+							viewportPos.y >= area.y && viewportPos.y <= area.y + area.w)
 						{
 							o->onClickUpInside();
 						}
+					}
+				}
+				if (o->canBeClicked()) {
+					auto area = o->getObservedArea();
+					glm::vec2 viewportPos = glm::vec2(mousePosition.x, display.getHeight() - mousePosition.y);
+					if (viewportPos.x >= area.x && viewportPos.x <= area.x + area.z &&
+						viewportPos.y >= area.y && viewportPos.y <= area.y + area.w) {
+						o->onHover(true);
+					}
+					else {
+						o->onHover(false);
 					}
 				}
 			}
@@ -69,17 +82,18 @@ namespace lazy
 
 		void Mouse::positionCallback(double xpos, double ypos)
 		{
-			mousePosition.x = (float) xpos;
-			mousePosition.y = (float) ypos;
+			mousePosition.x = static_cast<float>(xpos);
+			mousePosition.y = static_cast<float>(ypos);
 		}
 
 		void Mouse::buttonCallback(int button, int action, int mods)
 		{
+			(void)mods;
 			if (action == GLFW_PRESS)
 			{
 				if (!getButtonDown(button))
 				{
-					Button b = { button, action, glm::vec2(1280.0f, 720.0f) - mousePosition };
+					Button b = { button, action, glm::vec2(mousePosition.x, display.getHeight() - mousePosition.y) };
 					downButtons.push_back(b);
 				}
 			}
@@ -87,7 +101,7 @@ namespace lazy
 			{
 				if (!getButtonUp(button))
 				{
-					Button b = { button, action, glm::vec2(1280.0f, 720.0f) - mousePosition };
+					Button b = { button, action, glm::vec2(mousePosition.x, display.getHeight() - mousePosition.y) };
 					upButtons.push_back(b);
 				}
 			}
