@@ -37,6 +37,8 @@ namespace lazy
 			std::cout << "OpenGL version: " << glGetString(GL_VERSION) << "\n";
 
 			inputs::input::init(*this);
+
+			updateScreenSize();
 		}
 
 		Display::~Display()
@@ -92,11 +94,13 @@ namespace lazy
 				{
 					const GLFWvidmode *vidmode = glfwGetVideoMode(monitors[0]);
 					glfwSetWindowMonitor(window, monitors[0], 0, 0, vidmode->width, vidmode->height, vidmode->refreshRate);
+					isFullscreen = true;
 				}
 			}
 			else
 			{
 				glfwSetWindowMonitor(window, 0, 0, 0, width, height, 0);
+				isFullscreen = false;
 			}
 		}
 
@@ -109,6 +113,19 @@ namespace lazy
 			else
 			{
 				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+			}
+		}
+
+		void Display::updateScreenSize()
+		{
+			int nmonitors = 0;
+			GLFWmonitor **monitors = glfwGetMonitors(&nmonitors);
+
+			if (nmonitors > 0)
+			{
+				const GLFWvidmode *vidmode = glfwGetVideoMode(monitors[0]);
+				screenSize.x = vidmode->width;
+				screenSize.y = vidmode->height;
 			}
 		}
 	}
