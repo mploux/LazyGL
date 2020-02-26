@@ -29,6 +29,8 @@ int main()
 	Camera camera(display, (maths::transform){glm::vec3(0, 0, 5), glm::quat(), glm::vec3(1), nullptr});
 	camera.setProjection(70.0f, 0.1f, 1000.0f);
 
+	std::cout << "Random: " << lazy::maths::random() << std::endl;
+
 	float angle = 0;
 	int frames = 0;
 	double startTime = glfwGetTime();
@@ -41,6 +43,13 @@ int main()
 		if (currentTime - startTime >= 1.0 / 60.0)
 		{
 			display.updateInputs();
+
+			if (input::getKeyboard().getKeyDown(GLFW_KEY_A))
+				std::cout << "A DOWN" << std::endl;
+			if (input::getKeyboard().getKey(GLFW_KEY_A))
+				std::cout << "A" << std::endl;
+			if (input::getKeyboard().getKeyUp(GLFW_KEY_A))
+				std::cout << "A UP" << std::endl;
 			
 			if (display.isFocused())
 				camera.input(0.1f, 0.001f, {

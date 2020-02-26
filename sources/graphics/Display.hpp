@@ -3,6 +3,7 @@
 #include <iostream>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <glm/vec2.hpp>
 
 namespace lazy
 {
@@ -16,7 +17,11 @@ namespace lazy
 			int 		width;
 			int 		height;
 			bool		resized;
-			bool		focused;
+			glm::vec2	screenSize;
+			int			refreshRate;
+			bool		isFullscreen;
+
+			void updateScreenSize();
 
 		public:
 			Display(const std::string &title, int width, int height);
@@ -27,11 +32,11 @@ namespace lazy
 
 			GLFWwindow *getWindow() const { return window; }
 			std::string &getTitle() { return title; }
-			int getWidth() const { return width; }
-			int getHeight() const { return height; }
+			int getWidth() const { return isFullscreen ? screenSize.x : width; }
+			int getHeight() const { return isFullscreen ? screenSize.y : height; }
 			float getAspect() const { return (float)width / (float)height; }
+			glm::vec2 getScreenSize() const { return screenSize; }
 
-			bool isFocused() const { return focused; }
 			bool isClosed() const { return glfwWindowShouldClose(window); }
 			bool hasResized() const { return resized; }
 			void setVSync(int mode) { glfwSwapInterval(mode); }
@@ -40,6 +45,7 @@ namespace lazy
 			void setWidth(int width) { this->width = width; }
 			void setHeight(int height) { this->height = height; }
 			void setFullscreen(bool fullscreen);
+			void showCursor(bool show);
 
 			void updateViewport();
 

@@ -34,12 +34,12 @@ namespace lazy
 				int key = upKeys[i];
 				if (!getKey(key))
 					upKeys.erase(upKeys.begin() + i);
-				else
-				{
-					auto removeIndex = std::find(keys.begin(), keys.end(), key);
-					if (removeIndex != keys.end())
-						keys.erase(removeIndex);
-				}
+			}
+			for (int i = 0; i < keys.size(); i++)
+			{
+				int key = keys[i];
+				if (getKeyUp(key))
+					keys.erase(keys.begin() + i);
 			}
 		}
 
@@ -54,6 +54,10 @@ namespace lazy
 			{
 				if (!getKeyUp(key))
 					upKeys.push_back(key);
+				
+				auto downKeyIndex = std::find(downKeys.begin(), downKeys.end(), key);
+				if (downKeyIndex != downKeys.end())
+					downKeys.erase(downKeyIndex);
 			}
 		}
 	}

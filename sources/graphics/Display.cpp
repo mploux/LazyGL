@@ -12,7 +12,7 @@ namespace lazy
 	namespace graphics
 	{
 		Display::Display(const std::string &title, int width, int height)
-			: title(title), width(width), height(height), resized(false), focused(false)
+			: title(title), width(width), height(height), resized(false)
 		{
 			if (!glfwInit())
 				throw std::runtime_error("GLFW error: Unable to init glfw !");
@@ -37,6 +37,8 @@ namespace lazy
 			std::cout << "OpenGL version: " << glGetString(GL_VERSION) << "\n";
 
 			inputs::input::init(*this);
+
+			updateScreenSize();
 		}
 
 		Display::~Display()
@@ -62,20 +64,11 @@ namespace lazy
 				height = newHeight;
 				this->updateViewport();
 			}
-
-			if (focused)
-				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-			else
-				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 		}
 
 		void Display::updateInputs()
 		{
 			inputs::input::update();
-			if (inputs::input::getMouse().getButtonDown(0))
-				focused = true;
-			if (inputs::input::getKeyboard().getKey(GLFW_KEY_ESCAPE))
-				focused = false;
 		}
 
 		void Display::updateViewport()
@@ -101,11 +94,38 @@ namespace lazy
 				{
 					const GLFWvidmode *vidmode = glfwGetVideoMode(monitors[0]);
 					glfwSetWindowMonitor(window, monitors[0], 0, 0, vidmode->width, vidmode->height, vidmode->refreshRate);
+					isFullscreen = true;
 				}
 			}
 			else
 			{
 				glfwSetWindowMonitor(window, 0, 0, 0, width, height, 0);
+				isFullscreen = false;
+			}
+		}
+
+		void Display::showCursor(bool show)
+		{
+			if (show)
+			{
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+			}
+			else
+			{
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+			}
+		}
+
+		void Display::updateScreenSize()
+		{
+			int nmonitors = 0;
+			GLFWmonitor **monitors = glfwGetMonitors(&nmonitors);
+
+			if (nmonitors > 0)
+			{
+				const GLFWvidmode *vidmode = glfwGetVideoMode(monitors[0]);
+				screenSize.x = vidmode->width;
+				screenSize.y = vidmode->height;
 			}
 		}
 	}
