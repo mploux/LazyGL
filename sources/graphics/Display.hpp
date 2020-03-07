@@ -20,6 +20,7 @@ namespace lazy
 			glm::vec2	screenSize;
 			int			refreshRate;
 			bool		isFullscreen;
+			bool		focused;
 
 			void updateScreenSize();
 
@@ -39,6 +40,7 @@ namespace lazy
 
 			bool isClosed() const { return glfwWindowShouldClose(window); }
 			bool hasResized() const { return resized; }
+			bool isFocused() const { return focused; }
 			void setVSync(int mode) { glfwSwapInterval(mode); }
 
 			void setTitle(const std::string &title) { this->title = title; }

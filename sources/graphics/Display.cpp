@@ -64,11 +64,20 @@ namespace lazy
 				height = newHeight;
 				this->updateViewport();
 			}
+
+			if (focused)
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+			else
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 		}
 
 		void Display::updateInputs()
 		{
 			inputs::input::update();
+			if (inputs::input::getMouse().getButtonDown(0))
+				focused = true;
+			if (inputs::input::getKeyboard().getKey(GLFW_KEY_ESCAPE))
+				focused = false;
 		}
 
 		void Display::updateViewport()
